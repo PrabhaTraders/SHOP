@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const svcEgg = document.getElementById('svc-egg');
 
   if (heroSection) heroSection.style.backgroundImage = "url('images/hero-banner.png')";
-  if (aboutImage) aboutImage.style.backgroundImage = "url('images/prabha%20trader%20pic.jpg')";
-  if (svcFeed) svcFeed.style.backgroundImage = "url('images/eggmash%20.png')";
+  if (aboutImage) aboutImage.style.backgroundImage = "url('images/prabha-trader-pic.jpg')";
+  if (svcFeed) svcFeed.style.backgroundImage = "url('images/eggmash.png')";
   if (svcEquip) svcEquip.style.backgroundImage = "url('images/farming-equipment-new.png')";
   // Updated to use the new medicine and supplements image
   if (svcMed) svcMed.style.backgroundImage = "url('images/cal-2-mix.png')";
