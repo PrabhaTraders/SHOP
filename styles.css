@@ -325,20 +325,31 @@ img {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
+  align-items: center;
+  background: #ffffff;
+  padding: 0.5rem;
+  border-radius: 50px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .nav-links a {
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid transparent;
 }
 
 .nav-links a:hover {
   color: var(--accent);
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--bg-light);
+  border-color: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.05);
 }
 
 .mobile-menu-icon {
@@ -352,13 +363,13 @@ img {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 280px;
+  width: 320px;
   height: 100vh;
   background-color: var(--white);
-  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
   z-index: 1001;
-  padding: 2rem;
-  transition: right 0.4s ease;
+  padding: 3rem 2.5rem;
+  transition: right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .mobile-nav.active {
@@ -366,26 +377,41 @@ img {
 }
 
 .close-btn {
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: pointer;
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
+  top: 1.5rem;
+  right: 2rem;
+  color: var(--text-dark);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+  color: var(--accent);
 }
 
 .mobile-links {
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .mobile-links a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   display: block;
   padding: 1rem 0;
-  border-bottom: 1px solid #f1f5f9;
+  border-bottom: 1px solid var(--primary-light);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.mobile-links a:hover {
+  color: var(--accent);
+  padding-left: 10px;
+  border-bottom-color: var(--accent);
 }
 
 /* Modern Split Hero Section */
